@@ -1,0 +1,29 @@
+MySQL Code - 
+
+create database quizapp;
+use quizapp;
+
+
+create table question(
+id integer primary key,
+category varchar(255),
+difficultylevel varchar(255),
+option1 varchar(255),
+option2 varchar(255),
+option3 varchar(255),
+option4 varchar(255),
+ques varchar(255),
+rightanswer varchar(255)
+);
+
+INSERT INTO question (id, category, difficultylevel, option1, option2, option3, option4, ques, rightanswer) VALUES
+(1, 'General Knowledge', 'Easy', 'Earth', 'Mars', 'Venus', 'Jupiter', 'Which planet is known as the Red Planet?', 'Mars'),
+(2, 'Technology', 'Medium', 'OOP', 'DBMS', 'Operating System', 'Computer Networks', 'Which subject deals with databases?', 'DBMS'),
+(3, 'Java', 'Hard', 'int', 'String', 'boolean', 'float', 'Which data type is used to store true or false values in Java?', 'boolean'),
+(4, 'General Knowledge', 'Easy', '299,792 km/s', '150,000 km/s', '1,080 km/h', '3,000 km/s', 'What is the speed of light?', '299,792 km/s'),
+(5, 'Computer Science', 'Medium', 'for', 'while', 'do-while', 'All of these', 'Which loops are present in C programming?', 'All of these'),
+(6, 'Java', 'Medium', '==', '=', 'equals()', 'compare()', 'Which operator compares two primitive values in Java?', '=='),
+(7, 'Networking', 'Hard', 'TCP', 'UDP', 'HTTP', 'FTP', 'Which protocol is connection-oriented?', 'TCP'),
+(8, 'General Knowledge', 'Easy', 'Asia', 'Africa', 'Europe', 'Australia', 'Which is the largest continent?', 'Asia'),
+(9, 'Data Structures', 'Medium', 'Stack', 'Queue', 'Array', 'Tree', 'Which data structure follows FIFO?', 'Queue'),
+(10, 'Java', 'Hard', 'JVM', 'JRE', 'JDK', 'JAR', 'Which Java component contains the compiler javac?', 'JDK');
